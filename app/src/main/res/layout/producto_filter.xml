@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false">
+
+   <com.google.android.material.card.MaterialCardView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginEnd="8dp"
+       android:backgroundTint="@color/primary_grey_purple_light_background"
+       app:strokeColor="@color/primary_grey_purple_light_solid"
+       app:strokeWidth="0.5dp">
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:orientation="horizontal">
+
+         <TextView
+             android:id="@+id/producto_filter_nombre"
+             android:layout_width="wrap_content"
+             android:layout_height="30dp"
+             android:hint="Producto"
+             android:paddingStart="10dp"
+             android:paddingVertical="5dp"
+             android:textSize="12sp"/>
+
+         <ImageButton
+             android:id="@+id/remove_producto_filter"
+             android:layout_width="30dp"
+             android:layout_height="30dp"
+             android:background="@android:color/transparent"
+             android:src="@drawable/ic_cancel_18"
+             android:contentDescription="Elimina filtro"/>
+
+      </LinearLayout>
+
+   </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

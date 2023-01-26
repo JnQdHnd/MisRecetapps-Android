@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/receta_list">
+
+    <fragment
+        android:id="@+id/receta_list"
+        android:name="curso.android.misrecetapps.controllers.receta.list.RecetaListFragment"
+        tools:layout="@layout/fragment_recipe_list">
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/receta_form" />
+        <action
+            android:id="@+id/action_List_to_Details"
+            app:destination="@id/receta_details" />
+        <action
+            android:id="@+id/action_receta_list_pop"
+            app:popUpTo="@id/receta_list"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/receta_form"
+        android:name="curso.android.misrecetapps.controllers.receta.form.RecetaFormFragment"
+        tools:layout="@layout/fragment_recipe_form">
+        <action
+            android:id="@+id/action_RecetaForm_to_RecipesList"
+            app:destination="@id/receta_list" />
+        <action
+            android:id="@+id/action_RecetaForm_to_RecetaDetails"
+            app:destination="@id/receta_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/receta_details"
+        android:name="curso.android.misrecetapps.controllers.receta.details.RecetaDetailsFragment"
+        tools:layout="@layout/fragment_recipe_details">
+        <action
+            android:id="@+id/action_Details_to_List"
+            app:destination="@id/receta_list" />
+        <action
+            android:id="@+id/action_Details_to_FormEdit"
+            app:destination="@id/receta_form" />
+        <action
+            android:id="@+id/action_receta_details_pop"
+            app:popUpTo="@id/receta_list"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/producto_form"
+        android:name="curso.android.misrecetapps.controllers.producto.ProductoFormFragment"
+        tools:layout="@layout/fragment_producto_form">
+        <action
+            android:id="@+id/action_ProductoForm_to_ProductoList"
+            app:destination="@id/producto_list" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/producto_list"
+        android:name="curso.android.misrecetapps.controllers.producto.ProductoListFragment"
+        tools:layout="@layout/fragment_producto_list">
+        <action
+            android:id="@+id/action_ProductoList_to_ProductoForm"
+            app:destination="@id/producto_form" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/artefacto_form"
+        android:name="curso.android.misrecetapps.controllers.artefacto.ArtefactoFormFragment"
+        tools:layout="@layout/fragment_artefacto_form">
+        <action
+            android:id="@+id/action_ArtefactoForm_to_ArtefactoList"
+            app:destination="@id/artefacto_list" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/artefacto_list"
+        android:name="curso.android.misrecetapps.controllers.artefacto.ArtefactoListFragment"
+        tools:layout="@layout/fragment_artefacto_list">
+        <action
+            android:id="@+id/action_ArtefactoList_to_ArtefactoForm"
+            app:destination="@id/artefacto_form" />
+    </fragment>
+
+
+</navigation>

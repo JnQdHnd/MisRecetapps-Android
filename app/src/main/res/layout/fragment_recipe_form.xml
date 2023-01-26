@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".controllers.receta.form.RecetaFormFragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:imeOptions="flagNoExtractUi|actionDone">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/receta_form_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_input_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_bottom_to_floating_button">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_title_horizontal"
+                    android:layout_marginBottom="@dimen/margin_undertitle"
+                    android:layout_weight="1"
+                    android:text="@string/title_receta"
+                    android:textColor="@color/primary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/photo_principal_button"
+                    android:layout_width="48dp"
+                    android:layout_height="45dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:contentDescription="@string/sacar_foto"
+                    android:paddingHorizontal="@dimen/padding_h_btns_instruccion"
+                    android:src="@drawable/ic_camera_20" />
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/photo_principal_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_cardview_vertical"
+                android:visibility="gone"
+                app:cardCornerRadius="5dp"
+                app:strokeColor="@color/primary_grey_purple_light_solid"
+                app:strokeWidth="0.75dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/photo_principal_imageview"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:contentDescription="@string/foto_principal"
+                    android:scaleType="centerCrop" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/margin_title_horizontal"
+                android:layout_marginBottom="@dimen/margin_undertitle"
+                android:text="@string/title_receta_titulo"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/font_size_title" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/receta_form_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/min_width_button"
+                android:background="@drawable/background_square_white_bordered"
+                android:hint="@string/hint_receta_nombre"
+                android:imeOptions="flagNoExtractUi|actionDone"
+                android:inputType="textCapSentences"
+                android:maxLength="@integer/nombre_maxLength"
+                android:padding="@dimen/padding_input_select"
+                android:textSize="@dimen/font_size_input_select"
+                android:nextFocusDown="@id/receta_form_porciones"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/margin_title_horizontal"
+                android:layout_marginBottom="@dimen/margin_undertitle"
+                android:text="@string/title_receta_porciones"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/font_size_title" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/receta_form_porciones"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/min_width_button"
+                android:background="@drawable/background_square_white_bordered"
+                android:hint="@string/hint_receta_porciones"
+                android:imeOptions="flagNoExtractUi|actionDone"
+                android:inputType="number"
+                android:padding="@dimen/padding_input_select"
+                android:textSize="@dimen/font_size_input_select"
+                android:nextFocusDown="@id/receta_artefactos_cards_container"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/margin_title_horizontal"
+                android:layout_marginBottom="@dimen/margin_bottom_card">
+
+                <LinearLayout
+                    android:id="@+id/llTitulosIngrediente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/titulo_ingrediente_receta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_receta_ingredientes"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/font_size_title" />
+
+                    <TextView
+                        android:id="@+id/subtitulo_ingrediente_receta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subtitle_receta_ingredientes"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/font_size_subtitle" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/receta_form_add_ingrediente_button"
+                    android:layout_width="@dimen/min_width_button"
+                    android:layout_height="@dimen/min_width_button"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/background_square_light_grey_bordered"
+                    android:contentDescription="@string/agregar_otro_ingrediente"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_add_btn_18"
+                    app:tint="@color/primary_light" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/receta_ingredientes_cards_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/receta_ingrediente_card" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_title_horizontal"
+                android:layout_marginBottom="@dimen/margin_bottom_card">
+
+                <LinearLayout
+                    android:id="@+id/llTitulosArtefactos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/titulo_artefactos_receta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_receta_artefactos"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/font_size_title" />
+
+                    <TextView
+                        android:id="@+id/subtitulo_artefactos_receta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subtitle_receta_artefactos"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/font_size_subtitle" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/receta_form_add_artefacto_button"
+                    android:layout_width="@dimen/min_width_button"
+                    android:layout_height="@dimen/min_width_button"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/background_square_light_grey_bordered"
+                    android:contentDescription="@string/agregar_otro_artefacto"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_add_btn_18"
+                    app:tint="@color/primary_light" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/receta_artefactos_cards_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/receta_artefacto_card" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_title_horizontal"
+                android:layout_marginBottom="@dimen/margin_bottom_card">
+
+                <LinearLayout
+                    android:id="@+id/llTitulosInstrucciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/titulo_instrucciones_receta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_receta_instrucciones"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/font_size_title" />
+
+                    <TextView
+                        android:id="@+id/subtitulo_instrucciones_receta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subtitle_receta_instrucciones"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/font_size_subtitle" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/receta_form_add_instruccion_button"
+                    android:layout_width="@dimen/min_width_button"
+                    android:layout_height="@dimen/min_width_button"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/background_square_light_grey_bordered"
+                    android:contentDescription="@string/agregar_otra_instruccion"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_add_btn_18"
+                    app:tint="@color/primary_light" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/receta_instrucciones_cards_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/receta_instruccion_card" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_save"
+            app:maxImageSize="30dp"
+            android:contentDescription="@string/guardar_receta"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"/>
+    </LinearLayout>
+</RelativeLayout>

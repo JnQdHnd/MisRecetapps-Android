@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Linear layout as parent layout-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background_square_white_bordered">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="5dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/selecciona_un_item"
+                android:textSize="@dimen/font_size_title"
+                android:textStyle="bold"
+                android:textColor="@color/primary"/>
+            <TextView
+                android:id="@+id/subtitulo_search_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subtitle_select"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/font_size_subtitle" />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/add_item_button"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_plus"
+            android:tint="@color/primary_light"
+            android:background="@drawable/background_square_light_grey_bordered" />
+
+    </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textSize="16sp"
+            android:hint="@string/buscar"
+            android:paddingHorizontal="12dp"
+            android:singleLine="true"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/background_square_white_bordered"
+            android:imeOptions="flagNoExtractUi|actionDone"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_view"/>
+
+</LinearLayout>

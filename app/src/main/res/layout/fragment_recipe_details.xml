@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:keepScreenOn="true"
+    tools:context=".controllers.receta.details.RecetaDetailsFragment">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/container_general"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@color/primary_grey_purple_light_background">
+
+                    <TextView
+                        android:id="@+id/detalles_titulo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/nombre_de_receta"
+                        android:paddingHorizontal="10dp"
+                        android:paddingBottom="5dp"
+                        android:theme="@style/Theme.MisRecetapps.TitleDetalles" />
+
+                    <ImageButton
+                        android:id="@+id/detalles_opciones_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:backgroundTint="@android:color/transparent"
+                        android:contentDescription="@string/opciones_en_receta"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="5dp"
+                        android:src="@drawable/ic_menu" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/primary_transparente"
+                    android:contentDescription="@string/separador"/>
+
+                <LinearLayout
+                    android:id="@+id/detalles_barra_opciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:background="@color/primary_grey_purple_light_background">
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/detalles_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/min_width_button"
+                            android:contentDescription="@string/edita_receta"
+                            android:layout_marginEnd="10dp"
+                            android:backgroundTint="@android:color/transparent"
+                            android:src="@drawable/ic_pencil"
+                            android:tint="@color/primary"/>
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/detalles_delete"
+                            android:contentDescription="@string/elimina_receta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/min_width_button"
+                            android:layout_marginEnd="10dp"
+                            android:backgroundTint="@android:color/transparent"
+                            android:src="@drawable/ic_trash_can_fill" />
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/detalles_pdf"
+                            android:contentDescription="@string/descarga_pdf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:backgroundTint="@android:color/transparent"
+                            android:minHeight="48dp"
+                            android:src="@drawable/ic_pdf_box"
+                            android:tint="@color/primary" />
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/detalles_compartir"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/min_width_button"
+                            android:contentDescription="@string/envia_receta"
+                            android:layout_marginEnd="10dp"
+                            android:backgroundTint="@android:color/transparent"
+                            android:src="@drawable/ic_send"
+                            android:tint="@color/primary"/>
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/detalles_favorita"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/marca_como_favorita"
+                            android:layout_marginEnd="10dp"
+                            android:backgroundTint="@android:color/transparent"
+                            android:minHeight="48dp"
+                            android:src="@drawable/ic_star_border_24" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/primary_transparente"
+                        android:contentDescription="@string/separador"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/photo_llayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/photo_principal_imageview"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:contentDescription="@string/foto_principal"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/primary_transparente"
+                        android:contentDescription="@string/separador"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+
+                        android:id="@+id/detalles_porciones_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/porciones"
+                        android:theme="@style/Theme.MisRecetapps.SubtitleDetalles" />
+
+                    <EditText
+                        android:id="@+id/detalles_porciones"
+                        android:layout_width="150dp"
+                        android:layout_height="48dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginVertical="10dp"
+                        android:background="@drawable/background_square_white_bordered"
+                        android:hint="@string/cero"
+                        android:inputType="number"
+                        android:padding="7dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/carbon"
+                        android:textSize="22sp"
+                        android:imeOptions="flagNoExtractUi|actionDone"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/primary_grey_purple_light_background"
+                    android:contentDescription="@string/separador"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/detalles_ingredientes_title"
+                        android:theme="@style/Theme.MisRecetapps.SubtitleDetalles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/details_title_height"
+                        android:text="@string/ingredientes"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="4dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/detalles_ingredientes_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="4dp"
+                            tools:listitem="@layout/detalles_ingrediente"/>
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/primary_grey_purple_light_background"
+                        android:contentDescription="@string/separador"/>
+
+                    <LinearLayout
+                        android:id="@+id/detalles_artefactos_ll_principal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/detalles_artefactos_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/details_title_height"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="4dp"
+                            android:text="@string/artefactos"
+                            android:theme="@style/Theme.MisRecetapps.SubtitleDetalles" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/detalles_artefactos_container"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingBottom="4dp"
+                                tools:listitem="@layout/detalles_artefacto" />
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/primary_grey_purple_light_background"
+                            android:contentDescription="@string/separador"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/detalles_instrucciones_title"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/details_title_height"
+                            android:layout_weight="1"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="4dp"
+                            android:text="@string/instrucciones"
+                            android:theme="@style/Theme.MisRecetapps.SubtitleDetalles" />
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/detalles_instrucciones_speeker"
+                            android:layout_width="@dimen/details_title_height"
+                            android:layout_height="@dimen/details_title_height"
+                            android:backgroundTint="@android:color/transparent"
+                            android:src="@drawable/ic_bullhorn_outline"/>
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/detalles_instrucciones_info"
+                            android:layout_width="@dimen/details_title_height"
+                            android:layout_height="@dimen/details_title_height"
+                            android:layout_marginEnd="10dp"
+                            android:backgroundTint="@android:color/transparent"
+                            android:src="@drawable/ic_info" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/detalles_instrucciones_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingBottom="4dp"
+                            tools:listitem="@layout/detalles_instruccion"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/primary_grey_purple_light_background"
+                    android:contentDescription="@string/separador"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="4dp"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:paddingHorizontal="10dp"
+                                android:text="@string/costo_x_porcion"
+                                android:theme="@style/Theme.MisRecetapps.SubtitleDetalles"
+                                android:textSize="16sp"/>
+
+                            <TextView
+                                android:id="@+id/detalles_costoxporcion"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:text="@string/price_example"
+                                android:textSize="16sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginVertical="2dp">
+
+                            <TextView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:paddingHorizontal="10dp"
+                                android:text="@string/costo_total"
+                                android:theme="@style/Theme.MisRecetapps.SubtitleDetalles"
+                                android:textSize="16sp"/>
+
+                            <TextView
+                                android:id="@+id/detalles_costototal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:text="@string/price_example"
+                                android:textSize="16sp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/detalles_actualiza_precio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:src="@drawable/ic_shopping_basket" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/primary_grey_purple_light_background"
+                    android:contentDescription="@string/separador"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

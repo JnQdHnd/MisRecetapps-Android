@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom_card"
+        android:background="@drawable/background_square_light_grey_bordered">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="4dp"
+            android:paddingHorizontal="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/receta_title_card_ingrediente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/receta_card_ingrediente_delete"
+                    android:text="@string/title_receta_card_ingrediente"
+                    android:textColor="@color/primary_light_card_title"
+                    android:textSize="@dimen/font_size_card_title"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/receta_card_ingrediente_delete"
+                    android:layout_width="@dimen/min_width_button"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@android:color/transparent"
+                    android:contentDescription="@string/elimina_ingrediente"
+                    android:paddingHorizontal="@dimen/padding_h_btns_instruccion"
+                    android:src="@drawable/ic_trash_can" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/select_producto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/min_width_button"
+                android:background="@drawable/background_square_white_bordered"
+                android:gravity="center_vertical"
+                android:focusable="true"
+                android:hint="@string/hint_receta_selecciona_producto"
+                android:padding="@dimen/padding_card_input_select"
+                android:textSize="@dimen/font_size_card_input_select"
+                android:textColor="@color/carbon"
+                app:drawableEndCompat="@drawable/ic_arrow_down_24"
+                android:nextFocusDown="@id/input_cantidad"
+                android:focusableInTouchMode="true"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/min_width_button"
+                android:layout_marginVertical="@dimen/margin_cardview_vertical"
+                android:focusable="true"
+                android:background="@drawable/background_square_white_bordered"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:gravity="center_vertical">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/input_cantidad"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/background_square_white_bordered_start"
+                        android:hint="@string/hint_receta_cantidad"
+                        android:imeOptions="flagNoExtractUi|actionDone"
+                        android:inputType="numberDecimal"
+                        android:digits="0123456789,"
+                        android:nextFocusRight="@id/select_unidad_producto"
+                        android:paddingHorizontal="10dp"
+                        android:textColor="@color/carbon"
+                        android:textSize="@dimen/font_size_card_input_select" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="50">
+
+                    <TextView
+                        android:id="@+id/select_unidad_producto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/background_square_white_bordered_end"
+                        android:ellipsize="end"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_receta_unidad"
+                        android:maxLines="1"
+                        android:paddingHorizontal="10dp"
+                        android:textColor="@color/carbon"
+                        android:textSize="@dimen/font_size_card_input_select"
+                        app:drawableEndCompat="@drawable/ic_arrow_down_24" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

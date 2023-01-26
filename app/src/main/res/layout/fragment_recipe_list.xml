@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".controllers.receta.list.RecetaListFragment"
+    android:layout_marginHorizontal="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/encabezado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/material_motion_duration_long_1"
+                    android:text="@string/action_listado_recetas"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"
+                    android:paddingVertical="10dp"
+                    android:layout_marginHorizontal="@dimen/margin_title_horizontal"/>
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/filter_by_producto_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:src="@drawable/ic_filter_by_product"
+                    android:contentDescription="@string/filrado_por_producto"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/serch_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:hint="@string/buscar"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:background="@drawable/background_square_white_bordered"
+                android:imeOptions="flagNoExtractUi|actionDone"
+                android:layout_marginBottom="@dimen/margin_bottom_list"/>
+
+            <LinearLayout
+                android:id="@+id/filter_by_producto_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/margin_bottom_list"
+                    android:baselineAligned="true">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:background="@drawable/background_square_inside_bordered_white_start">
+
+                        <TextView
+                            android:id="@+id/select_producto_filter"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginHorizontal="5dp"
+                            android:ellipsize="end"
+                            android:focusable="true"
+                            android:gravity="center_vertical"
+                            android:hint="@string/hint_receta_selecciona_producto"
+                            android:maxLines="1"
+                            android:paddingHorizontal="15dp"
+                            android:textColor="@color/carbon"
+                            android:textSize="18sp"
+                            app:drawableEndCompat="@drawable/ic_arrow_down_24" />
+
+                        <TextView
+                            android:id="@+id/select_error_producto_filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:textIsSelectable="true"
+                            android:focusable="true"/>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/background_square_inside_bordered_end"
+                        android:gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/button_add_filter_producto"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/incorpora_filtro"
+                            android:src="@drawable/ic_plus"
+                            android:tint="@color/primary_light" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview_producto_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_bottom_list"
+                    tools:listitem="@layout/producto_filter"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewRecetas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/main_padding_small"
+            android:paddingBottom="100dp"
+            android:clipToPadding="false"
+            tools:listitem="@layout/item_receta">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/floating_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_new_recipe_cp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/book_plus_multiple"
+            app:maxImageSize="30dp"
+            android:contentDescription="@string/nueva_receta_con_preparaciones"
+            android:layout_margin="4dp"
+            android:visibility="gone"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_new_recipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/book_plus"
+            app:maxImageSize="30dp"
+            android:contentDescription="@string/nueva_receta"
+            android:layout_margin="4dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_check"
+            app:maxImageSize="30dp"
+            android:contentDescription="@string/nueva_receta"
+            android:layout_margin="4dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:baselineAligned="false">
+
+   <ImageView
+       android:id="@+id/punto"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerVertical="true"
+       android:padding="10dp"
+       android:src="@drawable/ic_square_artefacto" />
+
+   <TextView
+       android:id="@+id/detalles_artefactos_texto"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerVertical="true"
+       android:layout_gravity="center_vertical"
+       android:layout_toStartOf="@id/detalles_artefactos_ll"
+       android:layout_toEndOf="@id/punto"
+       android:ellipsize="end"
+       android:hint="Batidora de mano Balay 1000w"
+       android:maxLines="1"
+       android:paddingBottom="5dp"
+       android:textSize="@dimen/font_size_detalle_contenido_artefacto" />
+
+   <LinearLayout
+       android:id="@+id/detalles_artefactos_ll"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_alignParentEnd="true"
+       android:layout_centerVertical="true">
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+         <TextView
+             android:id="@+id/detalles_artefactos_minutos"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="10dp"
+             android:hint="20"
+             android:paddingBottom="5dp"
+             android:textSize="@dimen/font_size_detalle_contenido_artefacto" />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginHorizontal="5dp"
+             android:paddingBottom="5dp"
+             android:text="min. a"
+             android:textSize="@dimen/font_size_detalle_contenido_artefacto" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/detalles_artefactos_ll_intensidad"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_gravity="center_vertical">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:paddingBottom="5dp"
+             android:text="intensidad"
+             android:textSize="@dimen/font_size_detalle_contenido_artefacto" />
+
+         <TextView
+             android:id="@+id/detalles_artefactos_intensidad"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginEnd="10dp"
+             android:layout_marginStart="5dp"
+             android:paddingBottom="5dp"
+             android:hint="muy baja"
+             android:textSize="@dimen/font_size_detalle_contenido_artefacto" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/detalles_artefactos_ll_temperatura"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:visibility="gone">
+
+         <TextView
+             android:id="@+id/detalles_artefactos_temperatura"
+             android:inputType="number"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@android:color/transparent"
+             android:paddingBottom="5dp"
+             android:hint="180"
+             android:textSize="@dimen/font_size_detalle_contenido_artefacto" />
+
+         <TextView
+             android:id="@+id/detalles_artefactos_select_unidad"
+             android:layout_width="45dp"
+             android:layout_height="wrap_content"
+             android:layout_marginHorizontal="5dp"
+             android:gravity="end"
+             android:textColor="@color/carbon"
+             android:hint="@string/unidad_temperatura"
+             android:textSize="@dimen/font_size_detalle_contenido_artefacto"
+             app:drawableEndCompat="@drawable/ic_arrow_down_24"/>
+
+      </LinearLayout>
+
+
+
+   </LinearLayout>
+
+
+
+
+</RelativeLayout>

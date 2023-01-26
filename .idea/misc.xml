@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidEmuladores/SDK/platforms/android-32/data/res/drawable/editbox_background.xml" value="0.2505" />
+        <entry key="..\:/AndroidEmuladores/SDK/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.264" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable-v24/background_square_grey_bordered.xml" value="0.222" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable-v24/ic_trash_can_outline.xml" value="0.124" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable-v24/trash_can_outline.xml" value="0.173" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/avd_ear_hearing.xml" value="0.102" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/avd_ear_hearing_20.xml" value="0.1755" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/background_square_inside_bordered_center.xml" value="0.245" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/background_square_inside_bordered_end.xml" value="0.245" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/background_square_inside_bordered_start.xml" value="0.176" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/background_square_inside_bordered_white_center.xml" value="0.2375" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/background_square_inside_bordered_white_end.xml" value="0.2375" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/background_square_inside_bordered_white_start.xml" value="0.222" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/background_square_light_grey_bordered.xml" value="0.2505" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/background_square_white_border_primary.xml" value="0.124" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/background_square_white_bordered.xml" value="0.173" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/background_square_white_bordered_end.xml" value="0.163" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/background_square_white_bordered_selected.xml" value="0.163" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/background_square_white_bordered_selected_end.xml" value="0.163" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/background_square_white_bordered_selected_start.xml" value="0.163" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/background_square_white_bordered_start.xml" value="0.163" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/book_plus.xml" value="0.199" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/book_plus_multiple.xml" value="0.199" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic__add_btn_16.xml" value="0.173" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_add_24.xml" value="0.199" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_add_btn_18.xml" value="0.165" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_arrow_down_24.xml" value="0.144" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_back.xml" value="0.1655" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_basket_16.xml" value="0.124" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_book_arrow.xml" value="0.1755" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_broom.xml" value="0.1755" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_bullhorn.xml" value="0.2185" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_bullhorn_outline.xml" value="0.2185" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_camera.xml" value="0.225" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_camera_24.xml" value="0.222" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_cancel.xml" value="0.124" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_cancel_18.xml" value="0.222" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_check.xml" value="0.1755" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_check_instruccion.xml" value="0.163" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_circle.xml" value="0.2095" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_delete_outline_18.xml" value="0.2145" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_delete_outline_24.xml" value="0.173" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_eye_24.xml" value="0.1755" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_filter_16.xml" value="0.124" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_filter_by_product.xml" value="0.165" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_filter_by_product_2.xml" value="0.1755" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_folder_image.xml" value="0.2225" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_hearing.xml" value="0.124" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_image_remove.xml" value="0.225" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_image_remove_outline.xml" value="0.225" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_image_remove_outline_20.xml" value="0.165" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_info.xml" value="0.2185" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_launcher.xml" value="0.165" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_menu.xml" value="0.2095" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_mic.xml" value="0.1755" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_mic_18.xml" value="0.124" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_mic_none_18.xml" value="0.124" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_outline_send_24.xml" value="0.1755" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_pdf_28.xml" value="0.1755" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_pdf_box.xml" value="0.2185" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_photo_camera_18.xml" value="0.2315" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_photo_camera_24.xml" value="0.2315" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_photo_size_select_actual_300.xml" value="0.2185" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_plus.xml" value="0.222" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_plus_outline.xml" value="0.222" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_receta.xml" value="0.165" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_shopping_basket.xml" value="0.2185" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_square.xml" value="0.2095" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_square_artefacto.xml" value="0.2185" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_star_border_24.xml" value="0.1095" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_star_border_36.xml" value="0.2185" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_star_full_24.xml" value="0.2185" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_star_full_36.xml" value="0.145" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_timer.xml" value="0.2145" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_trash_can.xml" value="0.2185" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_trash_can_24.xml" value="0.2185" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_trash_can_fill.xml" value="0.2185" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_trash_can_outline_18.xml" value="0.124" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/ic_x.xml" value="0.124" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/round_button.xml" value="0.163" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/square_button_background.xml" value="0.152" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/drawable/vd_ear_hearing.xml" value="0.124" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/font-v26/quicksand.xml" value="0.1421875" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/font/quicksand.xml" value="0.4" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout-land/carga_compra.xml" value="0.2693693693693694" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout-land/compra_ingrediente.xml" value="0.2760416666666667" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout-land/fragment_first.xml" value="0.2625" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout-land/fragment_producto_list.xml" value="0.264" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout-land/fragment_recipe_details.xml" value="0.264" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout-land/fragment_recipe_form.xml" value="0.2" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout-land/fragment_recipes_list.xml" value="0.3067708333333333" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout-land/receta_artefacto_card.xml" value="0.2989583333333333" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout-land/receta_ingrediente_card.xml" value="0.37283621837549935" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout-land/receta_instruccion_card.xml" value="0.264" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout-v28/fragment_recipe_form.xml" value="0.15572916666666667" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/activity_main.xml" value="0.306064880112835" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/actualiza_costos.xml" value="0.25416666666666665" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/artefacto_minutos_intensidad.xml" value="0.4" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/artefacto_minutos_temperatura.xml" value="0.4" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/carga_compra.xml" value="0.23134328358208955" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/compra_ingrediente.xml" value="0.264" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/content_main.xml" value="0.264" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/detalles_artefacto.xml" value="0.264" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/detalles_artefactos.xml" value="0.25416666666666665" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/detalles_artefactos_intensidad.xml" value="0.4" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/detalles_artefactos_temperatura.xml" value="0.4" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/detalles_ingrediente.xml" value="0.4" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/detalles_instruccion.xml" value="0.4" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/dialog_searchable_spinner.xml" value="0.4" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/dialog_spinner.xml" value="0.25416666666666665" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/fragment_artefacto_form.xml" value="0.2" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/fragment_artefacto_list.xml" value="0.264" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/fragment_first.xml" value="0.264" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/fragment_producto_form.xml" value="0.2" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/fragment_producto_list.xml" value="0.264" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/fragment_receta_form.xml" value="0.25416666666666665" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/fragment_recipe_details.xml" value="0.264" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/fragment_recipe_form.xml" value="0.11819172113289761" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/fragment_recipe_list.xml" value="0.264" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/fragment_recipes_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/fragment_second.xml" value="0.11302083333333333" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/info_lectura_de_receta.xml" value="0.264" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/item_artefacto.xml" value="0.25416666666666665" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/item_producto.xml" value="0.264" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/item_receta.xml" value="0.4" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/print_pdf.xml" value="0.2" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/producto_filter.xml" value="0.4" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/receta_artefacto_card.xml" value="0.4" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/receta_ingrediente_card.xml" value="0.4" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/receta_ingrediente_card2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/receta_instruccion_card.xml" value="0.3104434907010014" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/select_longclick_receta_listado.xml" value="0.264" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/select_photo_source.xml" value="0.25416666666666665" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/layout/select_send_format.xml" value="0.4" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/menu/menu_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/mipmap-anydpi-v26 - copia/ic_launcher_round.xml" value="0.195" />
+        <entry key="..\:/Programacion/MisRecetapps/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.124" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

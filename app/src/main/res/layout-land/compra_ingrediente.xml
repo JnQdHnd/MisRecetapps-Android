@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:layout_marginVertical="2dp">
+
+   <com.google.android.material.card.MaterialCardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:strokeColor="@color/primary_grey_purple_light_solid"
+       app:strokeWidth="1dp"
+       android:layout_marginTop="5dp">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_marginHorizontal="10dp">
+
+         <TextView
+             android:id="@+id/compra_ingrediente_nombre"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginVertical="8dp"
+             android:maxLines="1"
+             android:ellipsize="end"
+             android:hint="Ingrediente"
+             android:textColor="@color/primary"
+             android:textSize="16sp" />
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/margin_cardview_vertical"
+             android:layout_marginBottom="8dp"
+             android:focusable="true"
+             android:background="@drawable/background_square_white_bordered"
+             android:baselineAligned="false"
+             android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/background_square_inside_bordered_start"
+                android:gravity="center">
+
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="$"
+                   android:textSize="@dimen/font_size_card_input_select"
+                   android:textColor="@color/carbon"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="33"
+                android:gravity="center">
+
+               <androidx.appcompat.widget.AppCompatEditText
+                   android:id="@+id/compra_input_price"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginHorizontal="5dp"
+                   android:background="@android:color/transparent"
+                   android:digits="0123456789,"
+                   android:hint="0,00"
+                   android:imeOptions="flagNoExtractUi|actionDone"
+                   android:inputType="numberDecimal"
+                   android:textAlignment="center"
+                   android:textColor="@color/carbon"
+                   android:textSize="@dimen/font_size_card_input_select"
+                   tools:ignore="TouchTargetSizeCheck" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/background_square_inside_bordered_center"
+                android:gravity="center">
+
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="lxs"
+                   android:textColor="@color/carbon"
+                   android:textSize="@dimen/font_size_card_input_select" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:layout_weight="33">
+
+               <androidx.appcompat.widget.AppCompatEditText
+                   android:id="@+id/compra_input_cantidad"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginHorizontal="5dp"
+                   android:background="@android:color/transparent"
+                   android:hint="1000"
+                   android:imeOptions="flagNoExtractUi|actionDone"
+                   android:digits="0123456789,"
+                   android:inputType="numberDecimal"
+                   android:textAlignment="center"
+                   android:textColor="@color/carbon"
+                   android:textSize="@dimen/font_size_card_input_select"
+                   tools:ignore="TouchTargetSizeCheck" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:layout_weight="33"
+                android:background="@drawable/background_square_inside_bordered_white_end">
+
+               <TextView
+                   android:id="@+id/select_unidad_producto"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginHorizontal="5dp"
+                   android:ellipsize="end"
+                   android:focusable="true"
+                   android:gravity="center"
+                   android:hint="Unidad"
+                   android:maxLines="1"
+                   android:textColor="@color/carbon"
+                   android:textSize="@dimen/font_size_card_input_select"
+                   app:drawableEndCompat="@drawable/ic_arrow_down_24" />
+            </RelativeLayout>
+
+         </LinearLayout>
+
+      </LinearLayout>
+
+
+   </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>
